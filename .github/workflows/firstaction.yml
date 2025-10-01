@@ -9,6 +9,7 @@ jobs:
     steps:
      - name: checkout 
        uses: actions/checkout@v5
+        - run echo "Code checkout"
 
      - name: python setup
        uses: actions/setup-python@v6
