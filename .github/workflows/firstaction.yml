@@ -4,22 +4,19 @@ on:
   branches:
    -main
 jobs:
-  Jobid-1:
+  Jobid_1:
     runs-on: ubuntu-latest
     steps:
      - name: checkout 
        uses: actions/checkout@v5
-        - run echo "Code checkout"
+     - name: Print checkout..
+        run echo "Code checkout"
 
      - name: python setup
        uses: actions/setup-python@v6
        with:
-        python-version: '3.13' 
+        python-version: '3.12' 
      - run: python my_script.py
 
-     - name: install dependencies
-       run: |
-         npm install
-         python app.py
-      
+   
    
